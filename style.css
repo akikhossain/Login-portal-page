@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(196, 190, 201);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.main-header {
+  height: 800px;
+  width: 800px;
+  background-color: rgb(43, 226, 202);
+  display: flex;
+  background-image: url(https://us.123rf.com/450wm/annagolant/annagolant1806/annagolant180602932/103438049-light-blue-geometric-background-with-wavy-shapes-lines-vector-illustration-dynamic-motion-style.jpg?ver=6);
+  color: rgb(243, 235, 235);
+  font-family: "Inter" sans-serif;
+}
+.center-1 {
+  align-self: center;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.form-header {
+  background-color: rgb(254, 254, 255);
+  height: 800px;
+  width: 800px;
+  display: flex;
+}
+
+.center-2 {
+  align-self: center;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.main-header h1 {
+  margin-bottom: 50px;
+}
+
+strong {
+  font-size: 60px;
+}
+
+.form-header h1 {
+  margin-bottom: 20px;
+  color: #3a7bf3;
+}
+
+.form-header p {
+  margin-bottom: 50px;
+  color: #a6a6a6;
+}
+
+form .txt-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.txt-field input {
+  width: 70%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt-field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.txt-field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2691d9;
+  transform: 0.5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label {
+  top: -5px;
+  color: #2691d9;
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before {
+  width: 70%;
+}
+
+.sign-up {
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  margin-bottom: 35px;
+  margin-top: 25px;
+}
+
+button {
+  width: 90%;
+  height: 50px;
+  background-color: #3a7bf3;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 2px;
+}
+button:hover {
+  background-color: rgb(12, 95, 12);
+}
+
+.sign-up a {
+  margin-left: 208px;
+  color: #3a7bf3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(13, 117, 13);
+  text-decoration: underline;
+}
